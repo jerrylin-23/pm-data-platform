@@ -4,6 +4,7 @@ Checked on 2026-10-07 on Apple M4 with Python 3.12.13.
 
 ## Passed
 
+- GitHub CI: the [first public build](https://github.com/jerrylin-23/pm-data-platform/actions/runs/37716064788) passed on a Linux runner. It built the Python package and dashboard, checked the C++ book with sanitizers, ran Ruff, and ran the test set with real Kafka integration enabled.
 - Full test set: **95 passed**. The main run passed 93 tests. A separate run passed the two real Kafka integration tests.
 - Python checks: Ruff passed for source, tests, and benchmark scripts.
 - Dashboard: TypeScript checks and the Vite production build passed.
@@ -38,6 +39,6 @@ f17d590bb04b358e86da81ba20b46cae4b6422e5b1fd3da106c771bfc3c8c099
 
 ## Not yet checked
 
-Authenticated live Kalshi capture, real one-hour busy-window performance, broker failure recovery, a full ingest-container kill test, and production deployment remain open. Windows and Linux host installation remain untested. The CI workflow is included. It has not run on a remote CI host in this session.
+Authenticated live Kalshi capture, real one-hour busy-window performance, broker failure recovery, a full ingest-container kill test, and production deployment remain open. Full Windows and Linux host installation remain untested. GitHub CI checks the Linux build and tests on each push and pull request.
 
 The real Polymarket fixture covers a requested 60-second capture. The ten-minute Kalshi fixtures are synthetic. They are not evidence of a live Kalshi connection.

@@ -8,6 +8,8 @@ This project reads market data. It has no order submission or wallet code. The b
 
 The code uses the [MIT license](LICENSE). Captured market data remains subject to the venue's terms.
 
+Build and test status: [GitHub CI](https://github.com/jerrylin-23/pm-data-platform/actions/workflows/ci.yml).
+
 ## Run on your computer
 
 Install Docker with Compose. Download and extract this project. Run this command from its directory:
