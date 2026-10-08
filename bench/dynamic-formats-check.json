@@ -1,0 +1,138 @@
+{
+  "checked_on": "2026-10-07",
+  "synthetic_capture_disabled": true,
+  "resolved_formats": [
+    {
+      "format": "binary",
+      "url": "https://polymarket.com/event/bitcoin-above-on-october-8-2026",
+      "open_markets": 11,
+      "native_instruments": 22,
+      "types": [
+        "markets"
+      ]
+    },
+    {
+      "format": "ranges",
+      "url": "https://polymarket.com/event/elon-musk-of-tweets-october-2-october-9-2026",
+      "open_markets": 20,
+      "native_instruments": 40,
+      "types": [
+        "markets"
+      ]
+    },
+    {
+      "format": "named_choices",
+      "url": "https://polymarket.com/event/democratic-presidential-nominee-2028",
+      "open_markets": 53,
+      "native_instruments": 106,
+      "types": [
+        "markets"
+      ]
+    },
+    {
+      "format": "up_down",
+      "url": "https://polymarket.com/event/bitcoin-up-or-down-on-october-8-2026",
+      "open_markets": 1,
+      "native_instruments": 2,
+      "types": [
+        "markets"
+      ]
+    },
+    {
+      "format": "head_to_head",
+      "url": "https://polymarket.com/event/mlb-tb-nyy-2026-10-07",
+      "open_markets": 27,
+      "native_instruments": 54,
+      "types": [
+        "baseball_game_extra_innings",
+        "baseball_team_first_five_spread",
+        "baseball_team_first_five_total",
+        "moneyline",
+        "spreads",
+        "team_totals",
+        "totals"
+      ]
+    },
+    {
+      "format": "mixed_sports",
+      "url": "https://polymarket.com/event/mlb-tb-nyy-2026-10-07",
+      "open_markets": 27,
+      "native_instruments": 54,
+      "types": [
+        "baseball_game_extra_innings",
+        "baseball_team_first_five_spread",
+        "baseball_team_first_five_total",
+        "moneyline",
+        "spreads",
+        "team_totals",
+        "totals"
+      ]
+    },
+    {
+      "format": "three_way_sports",
+      "url": "https://polymarket.com/event/bra-cre-gre-2026-10-07",
+      "open_markets": 3,
+      "native_instruments": 6,
+      "types": [
+        "moneyline"
+      ]
+    },
+    {
+      "format": "large_sports",
+      "url": "https://polymarket.com/event/cfb-jaxst-kenest-2026-10-07",
+      "open_markets": 193,
+      "native_instruments": 386,
+      "types": [
+        "first_half_moneyline",
+        "first_half_spreads",
+        "first_half_team_totals",
+        "first_half_totals",
+        "football_game_both_teams_score_touchdown",
+        "football_game_first_half_both_teams_score_touchdown",
+        "football_game_first_quarter_both_teams_score_touchdown",
+        "football_game_fourth_quarter_both_teams_score_touchdown",
+        "football_game_kickoff_punt_return_touchdown",
+        "football_game_overtime",
+        "football_game_pick_six",
+        "football_game_second_half_both_teams_score_touchdown",
+        "football_game_second_quarter_both_teams_score_touchdown",
+        "football_game_third_quarter_both_teams_score_touchdown",
+        "football_game_total_fourth_down_conversions",
+        "football_game_total_touchdowns",
+        "football_game_total_two_point_conversions",
+        "football_team_total_40_plus_yard_field_goals_made",
+        "football_team_total_field_goals_made",
+        "football_team_total_first_downs",
+        "football_team_total_pass_touchdowns",
+        "football_team_total_pass_yards",
+        "football_team_total_receptions",
+        "football_team_total_rush_yards",
+        "football_team_total_scrimmage_yards",
+        "moneyline",
+        "q2_both_teams_to_score_points",
+        "q2_moneyline",
+        "q2_spreads",
+        "q3_both_teams_to_score_points",
+        "q3_moneyline",
+        "q3_spreads",
+        "q3_totals",
+        "q4_both_teams_to_score_points",
+        "q4_moneyline",
+        "q4_spreads",
+        "q4_totals",
+        "second_half_moneyline",
+        "second_half_spreads",
+        "second_half_team_totals",
+        "second_half_totals",
+        "spreads",
+        "team_totals",
+        "team_touchdowns",
+        "total_dst_touchdowns",
+        "totals"
+      ]
+    }
+  ],
+  "tracked_markets": 37,
+  "native_books_received": 74,
+  "all_native_outcome_labels_preserved": true
+}

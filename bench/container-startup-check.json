@@ -1,0 +1,9 @@
+{
+  "container_mode": "kafka",
+  "books": 2,
+  "alerts": 30,
+  "data_origins": [
+    "synthetic",
+    "synthetic"
+  ]
+}

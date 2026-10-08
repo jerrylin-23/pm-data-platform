@@ -1,0 +1,87 @@
+{
+  "tested_at_utc": "2026-10-07T23:16:55.127060000Z",
+  "market": "Will Fl\u00e1vio Bolsonaro win the 2026 Brazilian presidential election?",
+  "market_url": "https://polymarket.com/market/will-flvio-bolsonaro-win-the-2026-brazilian-presidential-election",
+  "market_id": "601826",
+  "preliminary_probe": {
+    "duration_seconds": 30.695,
+    "price_changes": 1102,
+    "note": "Short activity burst across YES and NO. This is not a sustained rate."
+  },
+  "live_window": {
+    "duration_seconds": 60.764,
+    "samples": 232,
+    "both_live_samples": 231,
+    "versions_processed": {
+      "polymarket:109876868437950584369987384406356259939519193117253465815665152916226511121427": 26,
+      "polymarket:38310927461258927563020508025396887688249787380193911540547071417200646834355": 26
+    },
+    "book_invariant_errors": [],
+    "observed_violations": [
+      {
+        "event_id": "showcase-raw.polymarket:3:2780:0",
+        "key": "polymarket:109876868437950584369987384406356259939519193117253465815665152916226511121427",
+        "reason": "timeout"
+      },
+      {
+        "event_id": "showcase-raw.polymarket:3:2780:2",
+        "key": "polymarket:38310927461258927563020508025396887688249787380193911540547071417200646834355",
+        "reason": "timeout"
+      }
+    ],
+    "age_ms": {
+      "median": 4114.43,
+      "max": 15843.884
+    }
+  },
+  "archive_raw_frames": 32,
+  "normalized_events": 64,
+  "event_kinds": {
+    "snapshot": 4,
+    "delta": 56,
+    "control": 4
+  },
+  "full_checkpoint_matches": {
+    "polymarket:38310927461258927563020508025396887688249787380193911540547071417200646834355": true,
+    "polymarket:109876868437950584369987384406356259939519193117253465815665152916226511121427": true
+  },
+  "repeat_replay_matches": true,
+  "replay_sha256": "316455f0a245c7d8db42b18e0e8d15b5792a6fdd1f91f13cd0a7c0f7c3299fae",
+  "replay_violations": [
+    {
+      "reason": "timeout",
+      "event_id": "showcase-raw.polymarket:3:2780:0",
+      "key": "polymarket:109876868437950584369987384406356259939519193117253465815665152916226511121427"
+    },
+    {
+      "reason": "timeout",
+      "event_id": "showcase-raw.polymarket:3:2780:2",
+      "key": "polymarket:38310927461258927563020508025396887688249787380193911540547071417200646834355"
+    }
+  ],
+  "tests": {
+    "passed": 67,
+    "includes_live_kafka_recovery_and_transaction_checks": true
+  },
+  "continuity": "unverified; venue stream has no documented sequence guarantee",
+  "capture_sha256": "445b841b2febbbd7a3af5cf256e5d4fe453d1dc2407b51ef76e4b57a6ecfb9e7",
+  "archive_capture_interval": {
+    "first_received_utc": "2026-10-07T23:15:27.654185000Z",
+    "last_received_utc": "2026-10-07T23:16:55.127060000Z",
+    "elapsed_seconds": 87.473,
+    "note": "Archive counts cover subscription start through the saved checkpoint. Dashboard sample counts cover the separate one-minute observation."
+  },
+  "dashboard_checks": {
+    "production_build": "passed",
+    "browser_console_errors": 0,
+    "narrow_view": {
+      "viewport_width": 471,
+      "document_width": 456,
+      "book_left": 15,
+      "book_right": 441,
+      "book_width": 426,
+      "both_sides_visible": true
+    },
+    "fix": "Allow the grid panels to shrink to the available width."
+  }
+}

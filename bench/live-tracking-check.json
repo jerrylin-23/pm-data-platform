@@ -1,0 +1,5 @@
+{
+  "untrack_took_effect_without_process_restart": true,
+  "retrack_received_live_snapshot": true,
+  "tracked_instruments": 2
+}

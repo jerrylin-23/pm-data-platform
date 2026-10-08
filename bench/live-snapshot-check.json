@@ -1,0 +1,31 @@
+{
+  "method": "Fresh live WebSocket full depth compared with official REST. No book update occurred during each matching request. This is one observed check per instrument.",
+  "checks": [
+    {
+      "instrument_id": "16527037854599683549374763903447148990646302259213949285121667240035518912888",
+      "full_depth_matches_rest": true,
+      "no_book_update_during_request": true,
+      "levels_per_side": [
+        70,
+        21
+      ],
+      "websocket_event_id": "raw.polymarket:0:1:0",
+      "websocket_receive_ns": 1791412948238862000,
+      "rest_observed_ns": 1791412948782032000,
+      "attempts": 1
+    },
+    {
+      "instrument_id": "4740472048452665591406095189402741578301463781498291737546052273061813393204",
+      "full_depth_matches_rest": true,
+      "no_book_update_during_request": true,
+      "levels_per_side": [
+        21,
+        70
+      ],
+      "websocket_event_id": "raw.polymarket:0:1:1",
+      "websocket_receive_ns": 1791412948238862000,
+      "rest_observed_ns": 1791412948908229000,
+      "attempts": 1
+    }
+  ]
+}

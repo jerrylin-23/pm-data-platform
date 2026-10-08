@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+data
+build
+node_modules
+.venv
+dashboard/node_modules
+tests
+bench/runs
+**/__pycache__
+**/*.so

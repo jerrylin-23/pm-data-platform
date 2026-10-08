@@ -1,0 +1,60 @@
+name: pm-data-platform
+services:
+  redpanda:
+    image: docker.redpanda.com/redpandadata/redpanda:v26.1.14
+    command:
+      - redpanda
+      - start
+      - --mode=dev-container
+      - --smp=1
+      - --memory=1G
+      - --reserve-memory=0M
+      - --kafka-addr=internal://0.0.0.0:9092,external://0.0.0.0:19092
+      - --advertise-kafka-addr=internal://redpanda:9092,external://localhost:19092
+      - --rpc-addr=0.0.0.0:33145
+      - --advertise-rpc-addr=redpanda:33145
+    ports: ["127.0.0.1:19092:19092", "127.0.0.1:19644:9644"]
+    volumes: ["broker-data:/var/lib/redpanda/data"]
+    healthcheck:
+      test: ["CMD", "rpk", "cluster", "info", "-X", "brokers=localhost:9092"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  console:
+    image: docker.redpanda.com/redpandadata/console:v3.12.0
+    environment:
+      CONFIG_FILEPATH: /etc/console/config.yml
+    volumes: ["./config/console.yml:/etc/console/config.yml:ro"]
+    ports: ["127.0.0.1:8081:8080"]
+    depends_on:
+      redpanda: {condition: service_healthy}
+  prometheus:
+    image: prom/prometheus:v3.2.1
+    volumes: ["./config/prometheus.yml:/etc/prometheus/prometheus.yml:ro"]
+    ports: ["127.0.0.1:9090:9090"]
+  grafana:
+    image: grafana/grafana:11.6.0
+    environment:
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_ANONYMOUS_ORG_ROLE: Viewer
+      GF_USERS_ALLOW_SIGN_UP: "false"
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboard.json:/var/lib/grafana/dashboards/platform.json:ro
+    ports: ["127.0.0.1:3000:3000"]
+  app:
+    build: .
+    profiles: ["platform"]
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: redpanda:9092
+      PM_DATA_DIR: /data
+      PM_DEMO: ${PM_DEMO:-0}
+      PM_TOPIC_NAMESPACE: ${PM_TOPIC_NAMESPACE:-}
+    command: ["pm", "stack", "--host", "0.0.0.0", "--port", "8000"]
+    volumes: ["app-data:/data", "./pairs.yml:/app/pairs.yml:ro"]
+    ports: ["127.0.0.1:${PM_HTTP_PORT:-8765}:8000", "127.0.0.1:${PM_METRICS_PORT:-9100}:9100"]
+    depends_on:
+      redpanda: {condition: service_healthy}
+volumes:
+  broker-data:
+  app-data:

@@ -1,0 +1,98 @@
+{
+  "checked_on": "2026-10-07",
+  "synthetic_capture_disabled": true,
+  "checks": [
+    {
+      "case": "moneyline",
+      "document_width": 1265,
+      "legends": [
+        "Tampa Bay Rays",
+        "New York Yankees"
+      ],
+      "quotes": 2,
+      "types": [
+        "Moneyline 1",
+        "Spreads 2",
+        "Totals 2"
+      ],
+      "viewport": 1280
+    },
+    {
+      "case": "totals",
+      "choices": 2,
+      "legends": [
+        "O/U 6.5 · Over",
+        "O/U 7.5 · Over"
+      ],
+      "updates": 10
+    },
+    {
+      "case": "totals_under",
+      "depth": "O/U 7.5 · Under prices · Top 10 levels",
+      "document_width": 1265,
+      "legends": [
+        "O/U 6.5 · Over",
+        "O/U 7.5 · Over"
+      ],
+      "quotes": 2,
+      "selected": "Selected choice: O/U 7.5",
+      "updates": 13,
+      "viewport": 1280
+    },
+    {
+      "case": "spreads",
+      "choices": 2,
+      "legends": [
+        "Spread: New York Yankees (-1.5) · New York Yankees",
+        "Spread: New York Yankees (-2.5) · New York Yankees"
+      ],
+      "updates": 10
+    },
+    {
+      "case": "three_way_draw",
+      "choices": 3,
+      "legends": [
+        "Clube do Remo",
+        "Draw (Clube do Remo vs. Grêmio FBPA)",
+        "Grêmio FBPA"
+      ],
+      "quotes": 2,
+      "selected": "Selected choice: Draw (Clube do Remo vs. Grêmio FBPA)"
+    },
+    {
+      "case": "narrow_totals",
+      "choices": 2,
+      "document_width": 801,
+      "quotes": 2,
+      "types": [
+        "Moneyline 1",
+        "Spreads 2",
+        "Totals 2"
+      ],
+      "viewport": 816
+    },
+    {
+      "case": "type_change_chart_reset",
+      "legends": [
+        "Tampa Bay Rays",
+        "New York Yankees"
+      ],
+      "updates": 1
+    },
+    {
+      "case": "471px_totals",
+      "choices": 2,
+      "document_width": 456,
+      "quotes": 2,
+      "types": [
+        "Moneyline 1",
+        "Spreads 2",
+        "Totals 2"
+      ],
+      "viewport": 471
+    }
+  ],
+  "choice_switch_kept_history": true,
+  "market_type_change_reset_history": true,
+  "console_errors": []
+}

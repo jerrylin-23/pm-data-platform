@@ -1,0 +1,83 @@
+{
+  "method": "Single process; prepared one-level SET update plus top ten on each side. Native binding included.",
+  "pipeline_method": "Raw JSON decode, validation, normalization, staged C++ book, gap check, canonical state encoding. Storage and Kafka excluded.",
+  "system": {
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.12.13"
+  },
+  "books": [
+    {
+      "levels_per_side": 10,
+      "cpp_binding": {
+        "operations": 200000,
+        "seconds": 0.666754417,
+        "operations_per_second": 299960.51754689764,
+        "p50_us": 1.167,
+        "p99_us": 10.335,
+        "p99_9_us": 103.743
+      },
+      "python_dict": {
+        "operations": 200000,
+        "seconds": 0.526883167,
+        "operations_per_second": 379590.79455654725,
+        "p50_us": 1.209,
+        "p99_us": 8.167,
+        "p99_9_us": 45.983
+      },
+      "throughput_ratio": 0.7902207373003426
+    },
+    {
+      "levels_per_side": 100,
+      "cpp_binding": {
+        "operations": 200000,
+        "seconds": 0.374599708,
+        "operations_per_second": 533903.2458615798,
+        "p50_us": 1.167,
+        "p99_us": 2.917,
+        "p99_9_us": 16.959
+      },
+      "python_dict": {
+        "operations": 200000,
+        "seconds": 0.909543667,
+        "operations_per_second": 219890.48712710128,
+        "p50_us": 3.251,
+        "p99_us": 14.127,
+        "p99_9_us": 42.687
+      },
+      "throughput_ratio": 2.4280415803207194
+    },
+    {
+      "levels_per_side": 1000,
+      "cpp_binding": {
+        "operations": 200000,
+        "seconds": 0.407083166,
+        "operations_per_second": 491300.0995968475,
+        "p50_us": 1.167,
+        "p99_us": 3.501,
+        "p99_9_us": 20.847
+      },
+      "python_dict": {
+        "operations": 200000,
+        "seconds": 5.879555625,
+        "operations_per_second": 34016.17617998129,
+        "p50_us": 24.431,
+        "p99_us": 70.975,
+        "p99_9_us": 209.535
+      },
+      "throughput_ratio": 14.443131320738525
+    }
+  ],
+  "pipeline": {
+    "operations": 1200,
+    "seconds": 0.16854,
+    "operations_per_second": 7119.97152011392,
+    "p50_us": 115.391,
+    "p99_us": 396.031,
+    "p99_9_us": 593.919,
+    "events": 1200,
+    "alerts": 1199,
+    "state_sha256": "f17d590bb04b358e86da81ba20b46cae4b6422e5b1fd3da106c771bfc3c8c099",
+    "data_origin": "synthetic"
+  }
+}

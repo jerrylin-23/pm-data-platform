@@ -1,0 +1,3 @@
+# Add pairs only after checking identical contract terms and settlement rules.
+# Example fields: name, left, right, invert_right, fee_e4, threshold_e4.
+pairs: []

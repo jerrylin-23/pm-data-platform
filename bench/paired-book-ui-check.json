@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-10-07T23:29:25.651Z",
+  "production_build": "passed",
+  "browser": {
+    "bookLeft": 15,
+    "bookRight": 441,
+    "chartLabel": "YES and NO midpoint prices on the same time and probability scale",
+    "chartPaths": [
+      {
+        "class": "yes-line",
+        "commands": 58
+      },
+      {
+        "class": "no-line",
+        "commands": 58
+      }
+    ],
+    "depth": "NO prices · Top 10 levels",
+    "documentWidth": 456,
+    "marketCards": 4,
+    "marketTitles": [
+      "Synthetic rate decision",
+      "Will Flávio Bolsonaro win the 2026 Brazilian presidential election?",
+      "Will Bitcoin reach $105,000 in October?",
+      "Synthetic rate decision"
+    ],
+    "quotes": "YESlive83.85%Bid 0.8380 · Ask 0.8390NOlive16.15%Bid 0.1610 · Ask 0.1620",
+    "savedMarkets": 2,
+    "viewport": 471
+  },
+  "single_source_fallback": {
+    "inverseAskMatches": true,
+    "inverseBidMatches": true,
+    "quotes": [
+      {
+        "ask": 5630,
+        "bid": 5430,
+        "calculated": false,
+        "outcome": "YES"
+      },
+      {
+        "ask": 4570,
+        "bid": 4370,
+        "calculated": true,
+        "outcome": "NO"
+      }
+    ]
+  },
+  "depth_selection_yes": "passed",
+  "depth_selection_no": "passed",
+  "history_reset_on_market_change": "passed",
+  "browser_console_errors": 0
+}

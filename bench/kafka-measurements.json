@@ -1,0 +1,48 @@
+{
+  "data_origin": "synthetic",
+  "method": "Local Redpanda, four workers. Receive timestamp set before enqueue. Alert latency includes observer delivery. Lag sampled every 100 ms; measured peak is a lower bound.",
+  "runs": [
+    {
+      "speed": "1",
+      "synthetic_base_raw_frames_per_second": 200,
+      "raw_frames": 1000,
+      "book_states": 1000,
+      "alerts_observed": 909,
+      "book_states_per_second": 164.95541006028776,
+      "run_seconds": 6.062244333996205,
+      "receive_to_alert_observed_p50_ms": 379.391,
+      "receive_to_alert_observed_p99_ms": 1496.063,
+      "receive_to_alert_observed_p99_9_ms": 1678.335,
+      "peak_normalizer_lag_sampled_100ms": 20,
+      "seconds_to_drain_after_last_send": 1.0695593339987681
+    },
+    {
+      "speed": "10",
+      "synthetic_base_raw_frames_per_second": 200,
+      "raw_frames": 1000,
+      "book_states": 1000,
+      "alerts_observed": 500,
+      "book_states_per_second": 860.0247696741438,
+      "run_seconds": 1.1627572080033133,
+      "receive_to_alert_observed_p50_ms": 1446.911,
+      "receive_to_alert_observed_p99_ms": 1689.599,
+      "receive_to_alert_observed_p99_9_ms": 1693.695,
+      "peak_normalizer_lag_sampled_100ms": 138,
+      "seconds_to_drain_after_last_send": 0.661762625000847
+    },
+    {
+      "speed": "max",
+      "synthetic_base_raw_frames_per_second": 200,
+      "raw_frames": 1000,
+      "book_states": 1000,
+      "alerts_observed": 500,
+      "book_states_per_second": 877.6147248305248,
+      "run_seconds": 1.1394521670008544,
+      "receive_to_alert_observed_p50_ms": 1662.975,
+      "receive_to_alert_observed_p99_ms": 1692.671,
+      "receive_to_alert_observed_p99_9_ms": 1701.887,
+      "peak_normalizer_lag_sampled_100ms": 511,
+      "seconds_to_drain_after_last_send": 1.0875147080005263
+    }
+  ]
+}

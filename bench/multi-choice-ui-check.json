@@ -1,0 +1,43 @@
+{
+  "checked_on": "2026-10-07",
+  "source_url": "https://polymarket.com/event/elon-musk-of-tweets-october-2-october-9-2026",
+  "parent_event_id": "1101580",
+  "open_choices": 21,
+  "native_books": 42,
+  "book_statuses_at_final_check": {
+    "live": 42
+  },
+  "event_cards_for_example": 1,
+  "event_chart_series": 21,
+  "single_choice_chart_series": 2,
+  "range_selection_checked": [
+    "220-239",
+    "500+"
+  ],
+  "yes_no_depth_switch_passed": true,
+  "binary_chart_and_history_reset_passed": true,
+  "widths_checked": [
+    471,
+    1280
+  ],
+  "horizontal_overflow": false,
+  "synthetic_capture_disabled": true,
+  "synthetic_book_cards": 0,
+  "synthetic_alerts": 0,
+  "event_untrack_in_separate_test_app": {
+    "saved_choices": 0,
+    "displayed_books": 0
+  },
+  "source_record_ids_preserved": true,
+  "console_errors_at_final_check": [],
+  "tests": {
+    "main_passed": 76,
+    "broker_passed": 2
+  },
+  "limits": [
+    "Named side and Kalshi event metadata have offline tests; authenticated Kalshi capture remains untested.",
+    "Chart history covers the last 60 session updates. Missing two-sided quotes leave gaps."
+  ],
+  "live_recovery_check_seconds": 94.79,
+  "recovery_requests_from_previous_subscriptions_ignored": true
+}

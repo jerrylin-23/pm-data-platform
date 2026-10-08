@@ -1,0 +1,27 @@
+name: Build and correctness
+on: [push, pull_request]
+jobs:
+  correctness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install uv==0.11.21
+      - run: uv sync --frozen --extra dev
+      - run: npm ci && npm run build
+        working-directory: dashboard
+      - run: g++ -std=c++20 -O1 -g -fsanitize=address,undefined cpp/test_book.cpp -o /tmp/test-book && /tmp/test-book
+      - run: docker compose up -d --wait redpanda
+      - run: uv run --frozen ruff check src tests bench
+      - run: uv run --frozen pytest
+        env:
+          PM_KAFKA_TESTS: '1'
+          KAFKA_BOOTSTRAP_SERVERS: localhost:19092
+      - run: docker compose down
+        if: always()

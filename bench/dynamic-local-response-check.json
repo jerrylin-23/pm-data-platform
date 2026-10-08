@@ -1,0 +1,98 @@
+{
+  "checked_on": "2026-10-07",
+  "samples": [
+    {
+      "response_seconds": 0.483,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421349200757000
+    },
+    {
+      "response_seconds": 0.43,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421351621942000
+    },
+    {
+      "response_seconds": 0.325,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421353966525000
+    },
+    {
+      "response_seconds": 0.065,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421356044669000
+    },
+    {
+      "response_seconds": 0.189,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421358241518000
+    },
+    {
+      "response_seconds": 0.048,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421360298999000
+    },
+    {
+      "response_seconds": 0.075,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421362372880000
+    },
+    {
+      "response_seconds": 0.277,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421364638286000
+    },
+    {
+      "response_seconds": 0.078,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421366739433000
+    },
+    {
+      "response_seconds": 0.053,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421368799500000
+    },
+    {
+      "response_seconds": 0.228,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421370885216000
+    },
+    {
+      "response_seconds": 0.348,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421373369013000
+    },
+    {
+      "response_seconds": 0.167,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421375525855000
+    },
+    {
+      "response_seconds": 0.352,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421377865859000
+    },
+    {
+      "response_seconds": 0.088,
+      "live_books": 30,
+      "native_books": 30,
+      "last_received_ns": 1791421379986893000
+    }
+  ],
+  "max_response_seconds": 0.483,
+  "source_updates_received": true,
+  "synthetic_capture_disabled": true
+}

@@ -1,0 +1,29 @@
+{
+  "checked_on": "2026-10-07",
+  "host": "Apple M4, Linux ARM container",
+  "mode": "local",
+  "services": [
+    "app"
+  ],
+  "dashboard_current_build": true,
+  "live_polymarket_instruments": 2,
+  "subscriptions_survived_container_recreation": [
+    [
+      "polymarket",
+      "109876868437950584369987384406356259939519193117253465815665152916226511121427"
+    ],
+    [
+      "polymarket",
+      "38310927461258927563020508025396887688249787380193911540547071417200646834355"
+    ]
+  ],
+  "archive_rows_before_recreation": 391,
+  "archive_rows_after_recreation": 414,
+  "all_prior_archive_rows_preserved": true,
+  "all_prior_parquet_file_hashes_preserved": true,
+  "loopback_only": true,
+  "limits": [
+    "Windows and Linux host installation not tested",
+    "Kalshi requires user key setup"
+  ]
+}

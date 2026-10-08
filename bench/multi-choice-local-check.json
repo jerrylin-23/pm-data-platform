@@ -1,0 +1,11 @@
+{
+  "checked_on": "2026-10-07",
+  "host": "Apple M4, Linux ARM container",
+  "mode": "local",
+  "demo": false,
+  "choices": 21,
+  "native_books": 42,
+  "all_choice_metadata_survived_container_recreation": true,
+  "prior_archive_rows_preserved": 734,
+  "prior_parquet_hashes_preserved": 464
+}
